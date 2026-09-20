@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <!-- تعیین نوع کاراکترهای صفحه -->
+    <meta charset="UTF-8">
+
+    <!-- ریسپانسیو کردن سایت برای موبایل و تبلت -->
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <!-- کتابخانه Font Awesome برای نمایش آیکون‌ها -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- اتصال فایل CSS -->
+    <link
+        rel="stylesheet"
+        href="./stayl.css"
+    >
+
+    <title>Cafe|BinTech</title>
+
+</head>
+
+<body>
+        <header class="top-bar">
+
+        <div class="greeting">
+            <p class="greeting-hello">WELCOME TOO BINTECH COFFEE !</p>
+            <p class="greeting-sub">Your perfect coffee, delivered to you</p>
+        </div>
+
+        <a href="#" class="profile-avatar">
+            <img src="img/Mocha.jpg
+            " alt="User avatar">
+        </a>
+
+    </header>
+
+   <!-- <div class="search-wrap">
+        <div class="search-bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="searchInput" placeholder="Search your favorite coffee...">
+        </div>
+    </div> -->
+
+    
+    <section class="hero-banner">
+
+        <div class="hero-slider" id="heroSlider">
+
+            <!-- اسلاید 1 -->
+            <div class="hero-slide active">
+                <img src="img/BANER1.PNG" alt="Latte art">
+                <div class="hero-content">
+                    <h2>Your perfect coffee,<br>delivered to you</h2>
+                    <p>Order your favorite coffee from top cafes near you.</p>
+                    <a href="#" class="hero-btn">Order Now</a>
+                </div>
+            </div>
+
+            <!-- اسلاید 2 -->
+            <div class="hero-slide">
+                <img src="img/BANER2.PNG" alt="Cold brew">
+                <div class="hero-content">
+                    <h2>Cold brew season<br>is here</h2>
+                    <p>Fresh iced coffee, brewed slowly for a smooth taste.</p>
+                    <a href="#" class="hero-btn">Order Now</a>
+                </div>
+            </div>
+
+            <!-- اسلاید 3 -->
+            <div class="hero-slide">
+                <img src="img/BANER3.PNG" alt="Espresso">
+                <div class="hero-content">
+                    <h2>Strong mornings<br>start with espresso</h2>
+                    <p>Try our signature espresso from local roasters.</p>
+                    <a href="#" class="hero-btn">Order Now</a>
+                </div>
+            </div>
+
+        </div>
+
+     <div class="hero-dots" id="heroDots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+
+    <section class="categories">
+
+        <!-- هدر بخش دسته‌بندی -->
+        <div class="section-header">
+
+            <!-- عنوان بخش -->
+            <h2>Categories</h2>
+
+            <!-- لینک مشاهده همه دسته‌بندی‌ها -->
+            <a href="#">
+                View All
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+
+        </div>
+
+
+        <!-- ==================================================
+             لیست دسته‌بندی‌ها
+        ================================================== -->
+
+        <div class="category-list">
+
+            <!-- کارت دسته‌بندی قهوه گرم -->
+            <a href="#" class="category-card">
+
+                <!-- بخش آیکون -->
+                <div class="category-icon">
+                    <i class="fa-solid fa-mug-hot"></i>
+                </div>
+
+                <!-- نام دسته‌بندی -->
+                <span>Hot Coffee</span>
+
+            </a>
+
+
+            <!-- کارت دسته‌بندی قهوه سرد -->
+            <a href="#" class="category-card">
+
+                <!-- بخش آیکون -->
+                <div class="category-icon">
+                    <i class="fa-solid fa-mug-saucer"></i>
+                </div>
+
+                <!-- نام دسته‌بندی -->
+                <span>Cold Coffee</span>
+
+            </a>
+
+
+            <!-- کارت دسته‌بندی فراپوچینو -->
+            <a href="#" class="category-card">
+
+                <!-- بخش آیکون -->
+                <div class="category-icon">
+                    <i class="fa-solid fa-blender"></i>
+                </div>
+
+                <!-- نام دسته‌بندی -->
+                <span>Frappuccino</span>
+
+            </a>
+
+
+            <!-- کارت دسته‌بندی دسر -->
+            <a href="#" class="category-card">
+
+                <!-- بخش آیکون -->
+                <div class="category-icon">
+                    <i class="fa-solid fa-cake-candles"></i>
+                </div>
+
+                <!-- نام دسته‌بندی -->
+                <span>Dessert</span>
+
+            </a>
+
+
+            <!-- کارت دسته‌بندی چای -->
+            <a href="#" class="category-card">
+
+                <!-- بخش آیکون -->
+                <div class="category-icon">
+                    <i class="fa-solid fa-mug-hot"></i>
+                </div>
+
+                <!-- نام دسته‌بندی -->
+                <span>Tea</span>
+
+            </a>
+
+        </div>
+
+    </section>
+
+   <section class="best-selling">
+
+        <div class="section-header">
+            <h2>Best Selling</h2>
+            <a href="#">View All <i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+
+        <div class="best-list">
+
+            <!-- آیتم 1 -->
+            <div class="best-card">
+                <div class="best-image">
+                    <img src="img/cappuccino.jpg" alt="Caramel Macchiato">
+                    <button class="add-btn" aria-label="Add to cart">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+                <div class="best-info">
+                    <h3>Caramel Macchiato</h3>
+                    <div class="best-meta">
+                        <div class="drink-rating"><i class="fa-solid fa-star"></i><span>4.9</span></div>
+                        <span class="best-price">$6</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- آیتم 2 -->
+            <div class="best-card">
+                <div class="best-image">
+                    <img src="img/cappuccino.jpg" alt="Hazelnut Latte">
+                    <button class="add-btn" aria-label="Add to cart">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+                <div class="best-info">
+                    <h3>Hazelnut Latte</h3>
+                    <div class="best-meta">
+                        <div class="drink-rating"><i class="fa-solid fa-star"></i><span>4.8</span></div>
+                        <span class="best-price">$8</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- آیتم 3 -->
+            <div class="best-card">
+                <div class="best-image">
+                    <img src="img/cappuccino.jpg" alt="Mocha">
+                    <button class="add-btn" aria-label="Add to cart">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+                <div class="best-info">
+                    <h3>Mocha</h3>
+                    <div class="best-meta">
+                        <div class="drink-rating"><i class="fa-solid fa-star"></i><span>4.9</span></div>
+                        <span class="best-price">$9</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+       <section class="best-selling">
+
+        <div class="section-header">
+            <h2>Best Selling</h2>
+            <a href="#">View All <i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+
+        <div class="best-list">
+
+            <!-- آیتم 1 -->
+            <div class="best-card">
+                <div class="best-image">
+                    <img src="img/cappuccino.jpg" alt="Caramel Macchiato">
+                    <button class="add-btn" aria-label="Add to cart">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+                <div class="best-info">
+                    <h3>Caramel Macchiato</h3>
+                    <div class="best-meta">
+                        <div class="drink-rating"><i class="fa-solid fa-star"></i><span>4.9</span></div>
+                        <span class="best-price">$6</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- آیتم 2 -->
+            <div class="best-card">
+                <div class="best-image">
+                    <img src="img/cappuccino.jpg" alt="Hazelnut Latte">
+                    <button class="add-btn" aria-label="Add to cart">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+                <div class="best-info">
+                    <h3>Hazelnut Latte</h3>
+                    <div class="best-meta">
+                        <div class="drink-rating"><i class="fa-solid fa-star"></i><span>4.8</span></div>
+                        <span class="best-price">$8</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- آیتم 3 -->
+            <div class="best-card">
+                <div class="best-image">
+                    <img src="img/cappuccino.jpg" alt="Mocha">
+                    <button class="add-btn" aria-label="Add to cart">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+                <div class="best-info">
+                    <h3>Mocha</h3>
+                    <div class="best-meta">
+                        <div class="drink-rating"><i class="fa-solid fa-star"></i><span>4.9</span></div>
+                        <span class="best-price">$9</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+     <img src="img/BANER3.PNG" alt="BANER"
+       style="
+         width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+       "
+     >
+    <!-- ==================================================
+         منوی پایین صفحه
+    ================================================== -->
+
+    <nav class="bottom-nav">
+
+        <!-- لینک صفحه اصلی -->
+        <a href="#" class="bottom-nav-item active">
+
+            <!-- آیکون خانه -->
+            <i class="fa-solid fa-house"></i>
+
+            <!-- متن لینک -->
+            <span>Home</span>
+
+        </a>
+
+
+        <!-- لینک منو -->
+        <a href="#" class="bottom-nav-item">
+
+            <!-- آیکون منو -->
+            <i class="fa-solid fa-bars"></i>
+
+            <!-- متن لینک -->
+            <span>Menu</span>
+
+        </a>
+
+
+        <!-- لینک سفارش‌ها -->
+        <a href="#" class="bottom-nav-item">
+
+            <!-- آیکون سبد خرید -->
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <!-- متن لینک -->
+            <span>Orders</span>
+
+        </a>
+
+
+        <!-- لینک علاقه‌مندی‌ها -->
+        <a href="#" class="bottom-nav-item">
+
+            <!-- آیکون قلب -->
+            <i class="fa-solid fa-heart"></i>
+
+            <!-- متن لینک -->
+            <span>Favorites</span>
+
+        </a>
+
+
+        <!-- لینک پروفایل -->
+        <a href="#" class="bottom-nav-item">
+
+            <!-- آیکون کاربر -->
+            <i class="fa-solid fa-user"></i>
+
+            <!-- متن لینک -->
+            <span>Profile</span>
+
+        </a>
+
+    </nav>
+    
+    <!-- ==================================================
+     بخش نوشیدنی‌های محبوب
+================================================== -->
+
+<section class="popular-drinks">
+
+    <!-- هدر بخش Popular Drinks -->
+    <div class="section-header">
+
+        <!-- عنوان بخش -->
+        <h2>Popular Drinks</h2>
+
+        <!-- لینک مشاهده همه -->
+        <a href="#" class="popular-view-all">
+            View All
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+
+    </div>
+    <!-- ==================================================
+         لیست نوشیدنی‌های محبوب
+    ================================================== -->
+
+    <div class="drink-list">
+
+
+        <!-- کارت محصول 1 -->
+        <a href="#" class="drink-card">
+
+            <!-- تصویر محصول -->
+            <div class="drink-image">
+                <img src="img/cappuccino.jpg" alt="cappuccino">
+            </div>
+            
+
+            <!-- اطلاعات محصول -->
+            <div class="drink-info">
+
+                <!-- نام محصول -->
+                <h3>cappuccino</h3>
+
+                <!-- امتیاز -->
+                <div class="drink-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <span>4.8</span>
+                </div>
+
+                <!-- قیمت -->
+                <span class="drink-price">$5</span>
+
+            </div>
+
+        </a>
+
+
+        <!-- کارت محصول 2 -->
+        <a href="#" class="drink-card">
+
+            <div class="drink-image">
+                <img src="img/cappuccino.jpg" alt="Iced lette">
+            </div>
+
+            <div class="drink-info">
+
+                <h3>Iced lette</h3>
+
+                <div class="drink-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <span>4.7</span>
+                </div>
+
+                <span class="drink-price">$7</span>
+
+            </div>
+
+        </a>
+
+
+        <!-- کارت محصول 3 -->
+        <a href="#" class="drink-card">
+
+            <div class="drink-image">
+                <img src="img/cappuccino.jpg" alt="Mocha">
+            </div>
+
+            <div class="drink-info">
+
+                <h3>Mocha</h3>
+
+                <div class="drink-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <span>4.9</span>
+                </div>
+
+                <span class="drink-price">$9</span>
+
+            </div>
+
+        </a>
+
+
+        <!-- کارت محصول 4 -->
+        <a href="#" class="drink-card">
+
+            <div class="drink-image">
+                <img src="img/cappuccino.jpg" Peachy= "Dream">
+            </div>
+
+            <div class="drink-info">
+
+                <h3>Peachy Dream</h3>
+
+                <div class="drink-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <span>4.6</span>
+                </div>
+
+                <span class="drink-price">$12</span>
+
+            </div>
+
+        </a>
+
+
+        <!-- کارت محصول 5 -->
+        <a href="#" class="drink-card">
+
+            <div class="drink-image">
+                <img src="img/cappuccino.jpg" alt="Vanilla Latte">
+            </div>
+
+            <div class="drink-info">
+
+                <h3>Vanilla Latte</h3>
+
+                <div class="drink-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <span>4.8</span>
+                </div>
+
+                <span class="drink-price">$15</span>
+
+            </div>
+
+        </a>
+
+
+    </div>
+
+</section>
+
+</body>
+
+</html>
