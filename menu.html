@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- تنظیم نمایش صحیح در موبایل -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- همان CSS اصلی پروژه -->
+    <link rel="stylesheet" href="stayl.css">
+
+    <title>BinTech Coffee | Menu</title>
+</head>
+
+<body>
+
+    <!-- ================= MENU HEADER ================= -->
+
+    <header class="menu-header">
+
+        <div>
+
+            <span class="section-label">
+                BINTECH COFFEE
+            </span>
+
+            <h1>Our Menu</h1>
+
+            <p>
+                Choose your favorite coffee and enjoy every sip.
+            </p>
+
+        </div>
+
+        <a href="index.html" class="back-btn" aria-label="Back to home">
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+        </a>
+
+    </header>
+
+
+    <!-- ================= MENU SEARCH ================= -->
+
+    <section class="menu-tools">
+
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                placeholder="Search menu..."
+            >
+
+        </div>
+
+        <button class="filter-btn" aria-label="Filter menu">
+
+            <i class="fa-solid fa-sliders"></i>
+
+        </button>
+
+    </section>
+
+
+    <main>
+
+        <!-- ================= MENU CATEGORIES ================= -->
+
+        <section class="content-section menu-categories">
+
+            <div class="menu-category-list">
+
+                <button class="menu-category active">
+                    All
+                </button>
+
+                <button class="menu-category">
+                    Hot Coffee
+                </button>
+
+                <button class="menu-category">
+                    Cold Coffee
+                </button>
+
+                <button class="menu-category">
+                    Frappuccino
+                </button>
+
+                <button class="menu-category">
+                    Dessert
+                </button>
+
+                <button class="menu-category">
+                    Tea
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= BEST SELLING ================= -->
+
+      <section class="content-section">
+
+    <div class="section-heading">
+        <div>
+            <span class="section-label">OUR MENU</span>
+            <h2>Best Selling</h2>
+        </div>
+    </div>
+
+    <div class="best-list">
+
+        <!-- Caramel Macchiato -->
+        <article class="best-card" data-product-id="caramel-macchiato">
+
+            <div class="best-image">
+                <img src="img/cappuccino.jpg" alt="Caramel Macchiato">
+
+                <button
+                    class="favorite-small favorite-toggle"
+                    data-favorite-id="caramel-macchiato"
+                    aria-label="Add Caramel Macchiato to favorites">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <button
+                    class="add-btn add-to-cart"
+                    data-cart-id="caramel-macchiato"
+                    aria-label="Add Caramel Macchiato to cart">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+
+            <div class="best-info">
+                <span class="product-category">Hot Coffee</span>
+                <h3>Caramel Macchiato</h3>
+
+                <div class="best-meta">
+                    <span class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        4.9
+                    </span>
+
+                    <span class="best-price">$6</span>
+                </div>
+            </div>
+
+        </article>
+
+
+        <!-- Hazelnut Latte -->
+        <article class="best-card" data-product-id="hazelnut-latte">
+
+            <div class="best-image">
+                <img src="img/Iced lette.jpg" alt="Hazelnut Latte">
+
+                <button
+                    class="favorite-small favorite-toggle"
+                    data-favorite-id="hazelnut-latte"
+                    aria-label="Add Hazelnut Latte to favorites">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <button
+                    class="add-btn add-to-cart"
+                    data-cart-id="hazelnut-latte"
+                    aria-label="Add Hazelnut Latte to cart">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+
+            <div class="best-info">
+                <span class="product-category">Hot Coffee</span>
+                <h3>Hazelnut Latte</h3>
+
+                <div class="best-meta">
+                    <span class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        4.8
+                    </span>
+
+                    <span class="best-price">$8</span>
+                </div>
+            </div>
+
+        </article>
+
+
+        <!-- Mocha -->
+        <article class="best-card" data-product-id="mocha">
+
+            <div class="best-image">
+                <img src="img/Mocha.jpg" alt="Mocha">
+
+                <button
+                    class="favorite-small favorite-toggle"
+                    data-favorite-id="mocha"
+                    aria-label="Add Mocha to favorites">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <button
+                    class="add-btn add-to-cart"
+                    data-cart-id="mocha"
+                    aria-label="Add Mocha to cart">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+
+            <div class="best-info">
+                <span class="product-category">Hot Coffee</span>
+                <h3>Mocha</h3>
+
+                <div class="best-meta">
+                    <span class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        4.9
+                    </span>
+
+                    <span class="best-price">$9</span>
+                </div>
+            </div>
+
+        </article>
+
+
+        <!-- Vanilla Latte -->
+        <article class="best-card" data-product-id="vanilla-latte">
+
+            <div class="best-image">
+                <img src="img/Vanilla Latte.jpg" alt="Vanilla Latte">
+
+                <button
+                    class="favorite-small favorite-toggle"
+                    data-favorite-id="vanilla-latte"
+                    aria-label="Add Vanilla Latte to favorites">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <button
+                    class="add-btn add-to-cart"
+                    data-cart-id="vanilla-latte"
+                    aria-label="Add Vanilla Latte to cart">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+
+            <div class="best-info">
+                <span class="product-category">Hot Coffee</span>
+                <h3>Vanilla Latte</h3>
+
+                <div class="best-meta">
+                    <span class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        4.8
+                    </span>
+
+                    <span class="best-price">$7</span>
+                </div>
+            </div>
+
+        </article>
+
+
+        <!-- Peachy Dream -->
+        <article class="best-card" data-product-id="peachy-dream">
+
+            <div class="best-image">
+                <img src="img/Peachy Dream.jpg" alt="Peachy Dream">
+
+                <button
+                    class="favorite-small favorite-toggle"
+                    data-favorite-id="peachy-dream"
+                    aria-label="Add Peachy Dream to favorites">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <button
+                    class="add-btn add-to-cart"
+                    data-cart-id="peachy-dream"
+                    aria-label="Add Peachy Dream to cart">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+
+            <div class="best-info">
+                <span class="product-category">Cold Coffee</span>
+                <h3>Peachy Dream</h3>
+
+                <div class="best-meta">
+                    <span class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        4.7
+                    </span>
+
+                    <span class="best-price">$12</span>
+                </div>
+            </div>
+
+        </article>
+
+
+        <!-- Iced Latte -->
+        <article class="best-card" data-product-id="iced-latte">
+
+            <div class="best-image">
+                <img src="img/Iced lette.jpg" alt="Iced Latte">
+
+                <button
+                    class="favorite-small favorite-toggle"
+                    data-favorite-id="iced-latte"
+                    aria-label="Add Iced Latte to favorites">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <button
+                    class="add-btn add-to-cart"
+                    data-cart-id="iced-latte"
+                    aria-label="Add Iced Latte to cart">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+
+            <div class="best-info">
+                <span class="product-category">Cold Coffee</span>
+                <h3>Iced Latte</h3>
+
+                <div class="best-meta">
+                    <span class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        4.7
+                    </span>
+
+                    <span class="best-price">$7</span>
+                </div>
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+        <!-- ================= MENU PROMO ================= -->
+
+        <section class="menu-promo">
+
+            <div class="menu-promo-content">
+
+                <span>ENJOY YOUR COFFEE</span>
+
+                <h2>
+                    Every cup tells
+                    <br>
+                    a story.
+                </h2>
+
+                <p>
+                    Fresh beans, carefully prepared just for you.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= BOTTOM NAVIGATION ================= -->
+<nav class="bottom-nav">
+
+    <a href="index.html" class="bottom-nav-item">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+    </a>
+
+    <a href="menu.html" class="bottom-nav-item active">
+        <i class="fa-solid fa-mug-hot"></i>
+        <span>Menu</span>
+    </a>
+
+    <a href="cart.html" class="bottom-nav-item">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span>Orders</span>
+        <span class="nav-badge cart-count">0</span>
+    </a>
+
+    <a href="favorites.html" class="bottom-nav-item">
+        <i class="fa-regular fa-heart"></i>
+        <span>Favorites</span>
+        <span class="nav-badge favorite-count">0</span>
+    </a>
+
+    <a href="profile.html" class="bottom-nav-item">
+        <i class="fa-regular fa-user"></i>
+        <span>Profile</span>
+    </a>
+
+</nav>
+
+<script src="app.js"></script>
+</body>
+
+</html>
